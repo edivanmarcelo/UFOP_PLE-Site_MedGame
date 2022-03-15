@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MedGame</title>
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i|Open+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="paginapessoal.css">
+  </head>
+
+  <body>
+    <header id="home">
+      <nav>
+        <div id="logo">
+          MedGame
+        </div>
+        <div id="links">
+          <a href="#Introdução">Introdução</a>
+          <a href="#Planejamento">Planejamento</a>
+          <a href="#Modelagem">Modelagem</a>
+          <a href="#Protótipo">Protótipo</a>
+        </div>
+        <div id="menu">
+          <!-- Somewhat hacky way to create a "hamburger menu" -->
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </nav>
+
+      <h1>
+        <em>Computação Gráfica Aplicada</em><br/>
+        <strong>VR na Medicina</strong><br/>
+        <a class="button" href="#Informações">Saiba Mais</a>
+      </h1>
+    </header>
+
+    <section id="Introdução">
+      <div class="main">
+        <h1><strong>Computação Gráfica aplicada em disciplinas do Curso de Medicina</strong></h1>
+        <h1>O Problema</h1>
+        <p>
+          A Corrida em busca de novas tecnologias para facilitar a vida das pessoas está em constante crescimento. Empresas de diferentes áreas buscam sempre maiores produtividades para conseguir a satisfação do cliente de forma ágil e confiável. Na área da saúde, por exemplo, tecnologias como HoloLens são capazes de auxiliar os médicos a realizarem procedimentos cirúrgicos com um assistente virtual com realidade aumentada. 
+        </p>
+        <p>
+          Quando se discute sobre esses tipos de tecnologias, como o hololens, no ambiente universitário os pensamentos ficam distantes como se não estivessem ao alcance já que não são equipamentos acessíveis, principalmente para nós, brasileiros. Dessa forma, pensando no âmbito acadêmico de medicina, a computação gráfica tem muito a oferecer.
+        </p>
+        <p>
+          Com isso, é possível criar um vínculo entre o aluno de outras áreas à Computação Gráfica?
+        </p>
+        <h1>A Solução</h1>
+        <p>
+          Além de familiarizar esses alunos com o mundo da tecnologia e como ela pode se tornar um facilitador, há também formas de desenvolver várias habilidades e até mesmo melhorar a didática de ensino, como por exemplo em anatomia.
+        </p>
+        <p>
+          A proposta adotada aqui é a de desenvolver um jogo em 3D, simulando a consulta, no qual o jogador, o médico, deverá diagnosticar qual a doença do paciente através dos sintomas utilizando os equipamentos disponíveis.
+        </p>
+      </div>
+    </section>
+
+    <section id="Planejamento" class="opacidade">
+      <div class="main">
+        <h1>Estrutura</h1>
+        <p>
+          O jogador no papel de médico deve usar dos equipamentos disponíveis para aferir os sintomas do paciente e chegar a um diagnóstico preciso. Os equipamentos utilizados são: 
+        </p>
+      </div>
+
+      <div class="details">
+        <div class="linha">
+          <img src="images/termometro.png" alt="imagem de um termômetro digital." />
+          <div>
+            <h1>termômetro</h1>
+            <p>
+              O termômetro é um aparelho usado para medir a temperatura ou as variações de temperatura.
+            </p>
+          </div>
+        </div>
+
+        <div class="linha">
+          <img src="images/estetoscopio.png" alt="imagem de um estetoscópio." />
+          <div>
+            <h1>estetoscópio</h1>
+            <p>
+             Estetoscópio, é um instrumento utilizado para amplificar sons corporais de humanos ou animais.
+            </p>
+          </div>
+        </div>
+
+        <div class="linha">
+          <img src="images/esfigmomanometro.png" alt="imagem de um esfigmomanômetro digital." />
+          <div>
+            <h1>esfigmomanômetro</h1>
+            <p>
+              O esfigmomanômetro é um aparelho para verificar a pressão arterial.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="main">
+        <h1>Interação</h1>
+        <p>
+          A interação se dá da seguinte forma, o jogador usará os equipamentos disponíveis para realizar a consulta.
+          Cada equipamento utilizado pelo médico retornará um tipo de resultado referente a um sintoma do paciente.
+          Após concluir, o jogador terá uma série de sintomas para analisar e chegar ao melhor resultado possível.
+        </p>
+      </div>
+    </section>
+
+    <section id="Modelagem">
+      <div class="main">
+        <h1>Modelagem</h1>
+        <p>
+          A modelgaem do cenário, dos personagens e dos equipamentos foi pensada para ser o mais intuitiva possível. 
+        </p>
+      </div>
+
+      <div class="details">
+        <div class="modelos">
+          <img src="images/consultorio_1.png" alt="imagem referente ao interior do consultório." />
+          <img src="images/consultorio_2.png" alt="imagem referente ao exterior do Consultório." />
+          <h1>Consultório</h1>
+          <p>
+            Modelagem de uma sala para médicos realizarem a consulta dos pacientes.
+          </p>
+        </div>
+
+        <div class="modelos">
+          <img src="images/jogador.png" alt="imagem que mostra a visão do jogador, ou seja, suas mãos." />
+          <h1>Jogador</h1>
+          <p>
+            Será as mãos do médico e sua visão a da câmera do jogo, simulando uma visão real.
+          </p>
+        </div>
+
+        <div class="modelos">
+          <img src="images/npc.png" alt="imagem que mostra o paciente (NPC) sentado." />
+          <h1>Paciente</h1>
+          <p>
+            O paciente será um NPC, que apresentará um dos possíveis diagnósticos apresentados na prancheta de resultado. 
+          </p>
+        </div>
+
+        <div class="modelos">
+          <img src="images/objetos.png" alt="imagem que mostra os esquipamentos que serão utilizados para realizar a consulta." />
+          <img src="images/uso.png" alt="imagem que demostra o uso do estetoscópio pelo jogador." />
+          <h1>Equipamentos</h1>
+          <p>
+            O Esfigmomanômetro, o Termômetro e o Estetoscópio serão os esquipamentos utilizados para coletar os sintomas do paciente.
+          </p>
+        </div>
+
+        <div class="modelos">
+          <img src="images/resultado.png" alt="imagem que mostra a prancheta utilizada pelo jogador para inserir o resultado" />
+          <h1>Resultado</h1>
+          <p>
+            Na prancheta de resultados o jogador deve escolher o diagnóstico que melhor se encaixe com os sintomas do paciente.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="Protótipo" class="opacidade">
+      <div class="main">
+        <h1>Protótipo</h1>
+        <p>
+          Abaixo é apresentado um video do primeiro protótipo do jogo MedGame: 
+        </p>
+      </div>
+
+      <div class="details">
+        <div class="linha">
+          <video controls>
+            <source src="videos/MedGame01_.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </section>
+
+    <section id="Informações">
+      <div class="main">
+        <h1>Sobre</h1>
+         <p>
+          O projeto apresentado aqui foi desenvolvido pelos alunos Marcelo Edivan e Felipe Silva para a disciplina de Computação Gráfica-BCC327 oferecida pelo Departamento de Computação-DECOM da Universidade Federal de Ouro Preto-UFOP.
+        </p>
+      </div>
+    </section>
+
+    <footer>
+      <address><p>Página desenvolvida para "tarefa A08 - site pessoal" da disciplina de Programação Web-BCC481 oferecida pelo Departamneto de Computação-DECOM da Universidade Federal de Ouro Preto-UFOP</p></address>
+      <p>Criado por Marcelo Edivan</p>
+    </footer>
+<!--________________________________________________________________________________________-->
+
+    <div class="inicio"><a href="#home"><img src="images/home.png" width="30px" height="30px"></a></div>
+
+  </body>
+</html>
